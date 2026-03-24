@@ -27,7 +27,7 @@ jobs:
 
       #Dependency Scan
       - name: Trivy FS
-        uses: aquasecurity/trivy-action@0.69.3
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: fs
         continue-on-error: true
@@ -38,7 +38,7 @@ jobs:
 
       #Image Scan
       - name: Trivy Image
-        uses: aquasecurity/trivy-action@0.20.0
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: myapp
         continue-on-error: true
